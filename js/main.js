@@ -163,7 +163,7 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide')
     } else {
         nextButton.classList.remove('hide')
-        questionElement.classList.add('hide')
+        // questionElement.classList.add('hide')
     }
 }
 function setStatusClass(element, correct) {
@@ -263,7 +263,7 @@ const questions = [
     {
         question: 'Можно ли использовать Horizon в дополнение к Windows RDS?',
         answers: [
-            { text: 'Да', correct: false },
+            { text: 'Да', correct: true },
             { text: 'Нет', correct: false },
         ]
     }
@@ -276,5 +276,8 @@ const questions = [
             { text: 'Instant clones', correct: true },
             { text: 'vSAN', correct: false },
         ]
+    },
+    {
+        question: 'Опрос пройден',
     }
 ]
